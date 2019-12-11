@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Web App</title>
+    </head>
+    <style>
+    
+    </style>
+
+    <main>
+        <body>
+
+            <h1>Agent Keycard Creation</h1>
+
+            <form id="keyForm" action="#" onsubmit="compileCard(); return false">
+                    <input required type="text" name="name" 
+                    placeholder="Name"><br>
+                    <input required type="text" name="secretName" maxlength="16" 
+                    placeholder="Code Name"><br>
+                    <input required type="url"  name="photoUrl" size="50"
+                    placeholder=" Agent Photo  (right click Image -> copy image location) "><br>
+                    <input type="submit" value="Generate Keycard">
+                    <input type="reset" value="Clear Form">
+            </form>
+
+            <div id="cardInfo">
+                <p></p>
+                <p></p>
+            </div>
+
+            <div id="photo">
+            </div>
+            
+            <div id="template"><img src="images/template.jpeg"></div>
+
+            <h2>Load Agent Card</h2>
+            <ul>
+                <li><a id="0" href="#" onclick="loadCard(agents[0])">Blank Card</a></li>
+            </ul>
+
+        </body>
+    </main>
+
+    <script src="js/script.js"></script>
+
+</html>

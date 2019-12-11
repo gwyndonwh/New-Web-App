@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Final Home</title>
+        <meta charset="utf-8">
+        <link href="styles.css" rel="stylesheet">
+        <script src="scripts/script.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <!-- PHP INCLUDE -->
+            <h1>SECRET AGENT IDENTITY CARDS</h1>
+
+            <nav id="topNav">
+                <ul>
+
+                </ul>
+            </nav>
+
+            <script>
+                var path = window.location.pathname;
+                var page = path.split("/").pop(); //.slice(0, -5)
+
+                var pages = [
+                    'index.html',
+                    'about.html',
+                    'demo.html',
+                    'contact.html'
+                ]
+
+                for (i = 0; i < pages.length; i++) {
+                    var item = document.createElement('li');
+                    if (pages[i] == page) {
+                        item.innerHTML = '<a id="currentPage" href="#">'+ pages[i].slice(0, -5) +'</a';
+                    }
+                    else {
+                        item.innerHTML = '<a href="'+ pages[i] +'">'+ pages[i].slice(0, -5) +'</a';
+                    }
+                    document.querySelector('#topNav ul').appendChild(item);
+                }
+            </script>
+
+        </header>
+
+        <main>
+            
+
+
+
+
+            
+        </main>
+
+        <footer>
+            <!-- PHP INCLUDE -->
+        </footer>
+    </body>
+
+</html>

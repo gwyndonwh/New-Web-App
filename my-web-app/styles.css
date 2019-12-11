@@ -1,0 +1,152 @@
+header {
+    margin-bottom: 2em;
+}
+header h1 {
+    text-align: center;
+}
+header ul {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 85%;
+    background-color: #1f1f1f;
+    padding: 7px 0;
+}
+header li {
+    list-style: none;
+}
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+#currentPage {
+    text-decoration: none;
+    color: red;
+}
+footer {
+    display: flex;
+    background-color: #1f1f1f;
+    height: 100px;
+    margin: 2em auto;
+    margin-bottom: 0;
+    width: 85%;
+}
+footer h2 {
+    color: white;
+    margin: 30px auto;
+}
+
+.container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 1em;
+}
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(250, 85, 85);
+}
+.overlay a {
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
+    text-decoration: none;
+    color: white;
+    font-size: 3em;
+}
+.container:hover .overlay {
+    opacity: 0.75;
+}
+
+main h2 { text-align: center; }
+main p, main h2 {
+    width: 65%;
+    margin: 10px auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#application {
+    position: relative;
+}
+#application #cardInfo {
+    position: absolute;
+    height: 300px;
+    max-width: 230px;
+    font-size: 1.5em;
+    line-height: 12px;
+    top: 153px;
+    left: 100px;
+    font-family: 'Teko', sans-serif;
+}
+#application #cardInfo p:nth-child(2) {
+    padding-left: 100px;
+    padding-top: 13px;
+}
+#application #photo {
+    position: absolute;
+    background-image: url('images/photo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 185px;
+    height: 260px;
+    left: 375px;
+    top: 37px;
+    border-radius: 15px;
+}
+#application #template {
+    display: flex;
+    position: relative;
+    width: 600px;
+    margin: 0 auto;
+}
+#application input {
+    margin: 3px auto;
+    display: flex;
+}
+#application h1 {
+    font-family: 'Teko', sans-serif;
+    font-size: 1.5em;
+    padding-left: 1em;
+    text-align: center;
+}
+#application h2, #application select, #application button {
+    display: flex;
+    margin: 5px auto;
+    justify-content: center;
+    font-family: 'Teko', sans-serif;
+}
