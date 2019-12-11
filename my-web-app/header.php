@@ -15,6 +15,7 @@
         'about.php',
         'application.php',
         'contact.php'
+	'sweetmonkeymeat.php'
     ]
 
     for (i = 0; i < pages.length; i++) {
